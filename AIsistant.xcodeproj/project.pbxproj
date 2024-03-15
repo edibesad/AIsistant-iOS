@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		667F6B5D2BA1E2E10065B14A /* AIsistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6B5C2BA1E2E10065B14A /* AIsistantApp.swift */; };
-		667F6B5F2BA1E2E10065B14A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6B5E2BA1E2E10065B14A /* ContentView.swift */; };
 		667F6B612BA1E2E30065B14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667F6B602BA1E2E30065B14A /* Assets.xcassets */; };
 		667F6B642BA1E2E30065B14A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667F6B632BA1E2E30065B14A /* Preview Assets.xcassets */; };
 		667F6B6E2BA1E2E30065B14A /* AIsistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6B6D2BA1E2E30065B14A /* AIsistantTests.swift */; };
 		667F6B782BA1E2E30065B14A /* AIsistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6B772BA1E2E30065B14A /* AIsistantUITests.swift */; };
 		667F6B7A2BA1E2E30065B14A /* AIsistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6B792BA1E2E30065B14A /* AIsistantUITestsLaunchTests.swift */; };
+		667F6BA22BA2DAA40065B14A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 667F6BA12BA2DAA40065B14A /* GoogleGenerativeAI */; };
+		667F6BA42BA2DB060065B14A /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BA32BA2DB060065B14A /* AIService.swift */; };
+		667F6BA82BA2DC750065B14A /* GeminiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BA72BA2DC750065B14A /* GeminiManager.swift */; };
+		667F6BAB2BA2E0080065B14A /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BAA2BA2E0080065B14A /* APIKey.swift */; };
+		667F6BAD2BA2E0690065B14A /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667F6BAC2BA2E0690065B14A /* GenerativeAI-Info.plist */; };
+		667F6BB12BA2EB2B0065B14A /* GeminiAITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BB02BA2EB2B0065B14A /* GeminiAITest.swift */; };
+		667F6BB32BA428A50065B14A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BB22BA428A50065B14A /* HomeView.swift */; };
+		667F6BB62BA429A10065B14A /* HomeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BB52BA429A10065B14A /* HomeElement.swift */; };
+		667F6BBC2BA4381D0065B14A /* ChatIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BBB2BA4381D0065B14A /* ChatIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		667F6B592BA1E2E10065B14A /* AIsistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIsistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667F6B5C2BA1E2E10065B14A /* AIsistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIsistantApp.swift; sourceTree = "<group>"; };
-		667F6B5E2BA1E2E10065B14A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		667F6B602BA1E2E30065B14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		667F6B632BA1E2E30065B14A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		667F6B692BA1E2E30065B14A /* AIsistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIsistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,14 @@
 		667F6B732BA1E2E30065B14A /* AIsistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIsistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		667F6B772BA1E2E30065B14A /* AIsistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIsistantUITests.swift; sourceTree = "<group>"; };
 		667F6B792BA1E2E30065B14A /* AIsistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIsistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		667F6BA32BA2DB060065B14A /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		667F6BA72BA2DC750065B14A /* GeminiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiManager.swift; sourceTree = "<group>"; };
+		667F6BAA2BA2E0080065B14A /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		667F6BAC2BA2E0690065B14A /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		667F6BB02BA2EB2B0065B14A /* GeminiAITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiAITest.swift; sourceTree = "<group>"; };
+		667F6BB22BA428A50065B14A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		667F6BB52BA429A10065B14A /* HomeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeElement.swift; sourceTree = "<group>"; };
+		667F6BBB2BA4381D0065B14A /* ChatIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667F6BA22BA2DAA40065B14A /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +90,7 @@
 		667F6B502BA1E2E10065B14A = {
 			isa = PBXGroup;
 			children = (
+				667F6BA92BA2DFE10065B14A /* APIKey */,
 				667F6B5B2BA1E2E10065B14A /* AIsistant */,
 				667F6B6C2BA1E2E30065B14A /* AIsistantTests */,
 				667F6B762BA1E2E30065B14A /* AIsistantUITests */,
@@ -94,8 +111,11 @@
 		667F6B5B2BA1E2E10065B14A /* AIsistant */ = {
 			isa = PBXGroup;
 			children = (
+				667F6BA52BA2DC420065B14A /* Managers */,
+				667F6B992BA2CF3F0065B14A /* Utilities */,
+				667F6B982BA2CE970065B14A /* Services */,
+				667F6B862BA1E3020065B14A /* Features */,
 				667F6B5C2BA1E2E10065B14A /* AIsistantApp.swift */,
-				667F6B5E2BA1E2E10065B14A /* ContentView.swift */,
 				667F6B602BA1E2E30065B14A /* Assets.xcassets */,
 				667F6B622BA1E2E30065B14A /* Preview Content */,
 			);
@@ -114,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				667F6B6D2BA1E2E30065B14A /* AIsistantTests.swift */,
+				667F6BB02BA2EB2B0065B14A /* GeminiAITest.swift */,
 			);
 			path = AIsistantTests;
 			sourceTree = "<group>";
@@ -125,6 +146,168 @@
 				667F6B792BA1E2E30065B14A /* AIsistantUITestsLaunchTests.swift */,
 			);
 			path = AIsistantUITests;
+			sourceTree = "<group>";
+		};
+		667F6B862BA1E3020065B14A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				667F6B882BA1E3130065B14A /* Home */,
+				667F6B8A2BA1E32A0065B14A /* OneShot */,
+				667F6B892BA1E3220065B14A /* Chat */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		667F6B882BA1E3130065B14A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				667F6B8D2BA1E34D0065B14A /* Model */,
+				667F6B8C2BA1E3480065B14A /* View */,
+				667F6B8B2BA1E33E0065B14A /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		667F6B892BA1E3220065B14A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				667F6B942BA1E3BA0065B14A /* Model */,
+				667F6B932BA1E3B70065B14A /* View */,
+				667F6B922BA1E3B20065B14A /* ViewModel */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		667F6B8A2BA1E32A0065B14A /* OneShot */ = {
+			isa = PBXGroup;
+			children = (
+				667F6B912BA1E3AF0065B14A /* Model */,
+				667F6B902BA1E3AB0065B14A /* View */,
+				667F6B8F2BA1E3A60065B14A /* ViewModel */,
+			);
+			path = OneShot;
+			sourceTree = "<group>";
+		};
+		667F6B8B2BA1E33E0065B14A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		667F6B8C2BA1E3480065B14A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BB42BA429820065B14A /* Components */,
+				667F6BB22BA428A50065B14A /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		667F6B8D2BA1E34D0065B14A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		667F6B8F2BA1E3A60065B14A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		667F6B902BA1E3AB0065B14A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		667F6B912BA1E3AF0065B14A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		667F6B922BA1E3B20065B14A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		667F6B932BA1E3B70065B14A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		667F6B942BA1E3BA0065B14A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		667F6B982BA2CE970065B14A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BA32BA2DB060065B14A /* AIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		667F6B992BA2CF3F0065B14A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BBA2BA437E10065B14A /* Components */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		667F6BA52BA2DC420065B14A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BA62BA2DC490065B14A /* AIManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		667F6BA62BA2DC490065B14A /* AIManager */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BA72BA2DC750065B14A /* GeminiManager.swift */,
+			);
+			path = AIManager;
+			sourceTree = "<group>";
+		};
+		667F6BA92BA2DFE10065B14A /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BAA2BA2E0080065B14A /* APIKey.swift */,
+				667F6BAC2BA2E0690065B14A /* GenerativeAI-Info.plist */,
+			);
+			path = APIKey;
+			sourceTree = "<group>";
+		};
+		667F6BB42BA429820065B14A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BB52BA429A10065B14A /* HomeElement.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		667F6BBA2BA437E10065B14A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				667F6BBB2BA4381D0065B14A /* ChatIcon.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +326,9 @@
 			dependencies = (
 			);
 			name = AIsistant;
+			packageProductDependencies = (
+				667F6BA12BA2DAA40065B14A /* GoogleGenerativeAI */,
+			);
 			productName = AIsistant;
 			productReference = 667F6B592BA1E2E10065B14A /* AIsistant.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +399,12 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 667F6B502BA1E2E10065B14A;
+			packageReferences = (
+				667F6BA02BA2DAA40065B14A /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = 667F6B5A2BA1E2E10065B14A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +423,7 @@
 			files = (
 				667F6B642BA1E2E30065B14A /* Preview Assets.xcassets in Resources */,
 				667F6B612BA1E2E30065B14A /* Assets.xcassets in Resources */,
+				667F6BAD2BA2E0690065B14A /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +448,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667F6B5F2BA1E2E10065B14A /* ContentView.swift in Sources */,
+				667F6BA82BA2DC750065B14A /* GeminiManager.swift in Sources */,
+				667F6BAB2BA2E0080065B14A /* APIKey.swift in Sources */,
+				667F6BB62BA429A10065B14A /* HomeElement.swift in Sources */,
 				667F6B5D2BA1E2E10065B14A /* AIsistantApp.swift in Sources */,
+				667F6BB32BA428A50065B14A /* HomeView.swift in Sources */,
+				667F6BA42BA2DB060065B14A /* AIService.swift in Sources */,
+				667F6BBC2BA4381D0065B14A /* ChatIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667F6BB12BA2EB2B0065B14A /* GeminiAITest.swift in Sources */,
 				667F6B6E2BA1E2E30065B14A /* AIsistantTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +779,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		667F6BA02BA2DAA40065B14A /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		667F6BA12BA2DAA40065B14A /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 667F6BA02BA2DAA40065B14A /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 667F6B512BA1E2E10065B14A /* Project object */;
 }
