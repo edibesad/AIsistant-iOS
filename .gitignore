@@ -110,5 +110,5 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode,cocoapods
 
-/AIsistant/APIKey/GoogleService-Info.plist
 
+APIKey/GenerativeAI-Info.plist
