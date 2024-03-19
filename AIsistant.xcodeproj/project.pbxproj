@@ -22,6 +22,11 @@
 		667F6BB32BA428A50065B14A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BB22BA428A50065B14A /* HomeView.swift */; };
 		667F6BB62BA429A10065B14A /* HomeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BB52BA429A10065B14A /* HomeElement.swift */; };
 		667F6BBC2BA4381D0065B14A /* ChatIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F6BBB2BA4381D0065B14A /* ChatIcon.swift */; };
+		66FFD22A2BA9AA6F00BFD3F0 /* OneShotIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFD2292BA9AA6F00BFD3F0 /* OneShotIcon.swift */; };
+		66FFD22C2BA9AAC300BFD3F0 /* SettingsIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFD22B2BA9AAC300BFD3F0 /* SettingsIcon.swift */; };
+		66FFD2312BA9B06300BFD3F0 /* OneShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFD2302BA9B06300BFD3F0 /* OneShotView.swift */; };
+		66FFD2332BA9B08F00BFD3F0 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFD2322BA9B08F00BFD3F0 /* ChatView.swift */; };
+		66FFD2392BA9B0DB00BFD3F0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFD2382BA9B0DB00BFD3F0 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		667F6BB22BA428A50065B14A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		667F6BB52BA429A10065B14A /* HomeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeElement.swift; sourceTree = "<group>"; };
 		667F6BBB2BA4381D0065B14A /* ChatIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIcon.swift; sourceTree = "<group>"; };
+		66FFD2292BA9AA6F00BFD3F0 /* OneShotIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneShotIcon.swift; sourceTree = "<group>"; };
+		66FFD22B2BA9AAC300BFD3F0 /* SettingsIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIcon.swift; sourceTree = "<group>"; };
+		66FFD2302BA9B06300BFD3F0 /* OneShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneShotView.swift; sourceTree = "<group>"; };
+		66FFD2322BA9B08F00BFD3F0 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		66FFD2382BA9B0DB00BFD3F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,7 @@
 		667F6B862BA1E3020065B14A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				66FFD2342BA9B0A100BFD3F0 /* Settings */,
 				667F6B882BA1E3130065B14A /* Home */,
 				667F6B8A2BA1E32A0065B14A /* OneShot */,
 				667F6B892BA1E3220065B14A /* Chat */,
@@ -221,6 +232,7 @@
 		667F6B902BA1E3AB0065B14A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				66FFD2302BA9B06300BFD3F0 /* OneShotView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 		667F6B932BA1E3B70065B14A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				66FFD2322BA9B08F00BFD3F0 /* ChatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,8 +319,42 @@
 			isa = PBXGroup;
 			children = (
 				667F6BBB2BA4381D0065B14A /* ChatIcon.swift */,
+				66FFD2292BA9AA6F00BFD3F0 /* OneShotIcon.swift */,
+				66FFD22B2BA9AAC300BFD3F0 /* SettingsIcon.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		66FFD2342BA9B0A100BFD3F0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				66FFD2362BA9B0AE00BFD3F0 /* Model */,
+				66FFD2352BA9B0A700BFD3F0 /* View */,
+				66FFD2372BA9B0B300BFD3F0 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		66FFD2352BA9B0A700BFD3F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66FFD2382BA9B0DB00BFD3F0 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66FFD2362BA9B0AE00BFD3F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66FFD2372BA9B0B300BFD3F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,11 +496,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				667F6BA82BA2DC750065B14A /* GeminiManager.swift in Sources */,
+				66FFD2312BA9B06300BFD3F0 /* OneShotView.swift in Sources */,
 				667F6BAB2BA2E0080065B14A /* APIKey.swift in Sources */,
 				667F6BB62BA429A10065B14A /* HomeElement.swift in Sources */,
+				66FFD2332BA9B08F00BFD3F0 /* ChatView.swift in Sources */,
 				667F6B5D2BA1E2E10065B14A /* AIsistantApp.swift in Sources */,
 				667F6BB32BA428A50065B14A /* HomeView.swift in Sources */,
+				66FFD22A2BA9AA6F00BFD3F0 /* OneShotIcon.swift in Sources */,
 				667F6BA42BA2DB060065B14A /* AIService.swift in Sources */,
+				66FFD2392BA9B0DB00BFD3F0 /* SettingsView.swift in Sources */,
+				66FFD22C2BA9AAC300BFD3F0 /* SettingsIcon.swift in Sources */,
 				667F6BBC2BA4381D0065B14A /* ChatIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,8 +676,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,8 +703,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
