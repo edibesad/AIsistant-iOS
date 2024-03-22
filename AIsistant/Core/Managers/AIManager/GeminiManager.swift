@@ -24,7 +24,7 @@ class GeminiManager: AIService {
                 completion(text)
             }
             else {
-                completion("no_data")
+                fatalError("Something went wrong")
             }
           
         }
