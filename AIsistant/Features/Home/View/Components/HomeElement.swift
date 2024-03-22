@@ -9,7 +9,10 @@ import SwiftUI
 
 
 
-struct HomeElement<Content: View, Destination: View>: View {
+struct HomeElement<
+    Content: View,
+    Destination: View
+>: View {
     let title: String
     @ViewBuilder let icon: Content
     @ViewBuilder let destination: Destination
@@ -20,29 +23,65 @@ struct HomeElement<Content: View, Destination: View>: View {
     var body: some View {
         GeometryReader { g in
             ZStack {
-                NavigationLink (destination: destination) {
+                NavigationLink (
+                    destination: destination
+                ) {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(.black)
-                            .offset(x: -8, y: 4)
+                        RoundedRectangle(
+                            cornerRadius: 10
+                        )
+                        .fill(
+                            .black
+                        )
+                        .offset(
+                            x: -8,
+                            y: 4
+                        )
                         
                         
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(fill)
-                            .cornerRadius(10)
-                            .frame(width: g.size.width - 10, height: g.size.height - 10)
-                            .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(borderColor, lineWidth: 4)
-                                )
-                            
+                        RoundedRectangle(
+                            cornerRadius: 10
+                        )
+                        .fill(
+                            fill
+                        )
+                        .cornerRadius(
+                            10
+                        )
+                        .frame(
+                            width: g.size.width - 10,
+                            height: g.size.height - 10
+                        )
+                        .overlay(
+                            RoundedRectangle(
+                                cornerRadius: 10
+                            )
+                            .stroke(
+                                borderColor,
+                                lineWidth: 4
+                            )
+                        )
                         
-                        HStack(spacing: g.size.width * 0.06) {
+                        
+                        HStack(
+                            spacing: g.size.width * 0.06
+                        ) {
                             icon
-                                .frame(width: g.size.width * 0.2, height: g.size.width * 0.2)
-                            Text(title)
-                                .font(.system(size: g.size.width * 0.15))
-                                .foregroundStyle(textColor)
+                                .frame(
+                                    width: g.size.width * 0.2,
+                                    height: g.size.width * 0.2
+                                )
+                            Text(
+                                title
+                            )
+                            .font(
+                                .system(
+                                    size: g.size.width * 0.15
+                                )
+                            )
+                            .foregroundStyle(
+                                textColor
+                            )
                             
                         }
                     }
@@ -54,11 +93,15 @@ struct HomeElement<Content: View, Destination: View>: View {
 }
 
 #Preview {
-    HomeElement(title: "One Shot", icon: {
+    HomeElement(title: "One Shot",
+                icon: {
         ChatIcon()
-    }, 
-                destination: {
-      OneShotView()
     },
-                fill: .blue, borderColor: .red, textColor: .white)
+                
+                destination: {
+        OneShotView()
+    },
+                fill: .blue,
+                borderColor: .red,
+                textColor: .white)
 }
